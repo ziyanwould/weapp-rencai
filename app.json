@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2179FB"
+   
+ 
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "color":"#666666",
+    "selectedColor":"#14AFFC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_curr.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "公司",
+        "iconPath": "images/icon_find.png",
+        "selectedIconPath": "images/icon_find_curr.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon_user.png",
+        "selectedIconPath": "images/icon_user_curr.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
