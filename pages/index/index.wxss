@@ -50,6 +50,9 @@ line-height: 40rpx;
 width:60%;
 font-size: 27.78rpx;
 text-align: left;
+ overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;  
 }
 .f30{
  font-size: 20rpx;
