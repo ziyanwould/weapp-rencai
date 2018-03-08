@@ -20,7 +20,7 @@
   </view> -->
 </view>
 <view class='recommend'>
-  <view class="line"></view><view>为您推荐的好职位</view><view class="line"></view>
+  <view class="line"></view><view class='tui'>为您推荐的好职位</view><view class="line"></view>
 </view>
 <view class="list" wx:for="{{jobList}}" wx:key="item.id">
     <view class="list-item list-item-left" >
@@ -29,7 +29,7 @@
      <view class="list-item list-item-middle">
        <view class="f-b f-black">{{item.jobName}}</view>
         <view class="f-gray">{{item.companyName}}</view>
-         <view class="f-gray">{{item.requrie}}</view>
+         <view class="f-grays">{{item.requrie}}</view>
     </view>
    <view class="list-item list-item-right">
     <view>{{item.jobSalary}}</view>
@@ -37,6 +37,27 @@
     
     </view>
 </view>
+
+<!-- 下拉刷新版块 -->
+<span style="font-size:18px;"><!--index.wxml-->  
+<view class="container" style="padding:0rpx">  
+  <!--垂直滚动，这里必须设置高度-->  
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"   
+        class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad"  bindscroll="scroll">  
+        <view class="item" wx:for="{{list}}">  
+            <image class="img" src="{{item.pic_url}}"></image>  
+            <view class="text">  
+                <text class="title">{{item.name}}</text>  
+                <text class="description">{{item.short_description}}</text>  
+            </view>  
+        </view>  
+    </scroll-view>  
+    <view class="body-view">  
+        <loading hidden="{{hidden}}" bindchange="loadingChange">  
+            加载中...  
+        </loading>  
+    </view>  
+</view></span>  
 <!-- <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
 <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"

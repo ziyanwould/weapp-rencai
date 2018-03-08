@@ -21,8 +21,12 @@
 }
 
 .list{
-    width: 100%;
+    width: 90%;
     background: #fff;
+    margin: 10rpx auto;
+    display: flex;
+    padding-bottom: 5rpx;
+    border-bottom: 1px solid #D7D9D9;
 }
 .list-item{
     height: 120rpx;
@@ -31,32 +35,42 @@
     float: left;
 }
 .list-item-left{
-width:20%;
+ width:20%;
+ text-align: left;
 }
 .list-item-right{
 width:20%;
-font-size: 40rpx;
+font-size: 20rpx;
 color:salmon;
 font-weight: bold;
 line-height: 40rpx;
+ text-align: right;
 }
 .list-item-middle{
 width:60%;
-font-size: 30rpx;
+font-size: 27.78rpx;
 text-align: left;
 }
 .f30{
- font-size: 30rpx;
+ font-size: 20rpx;
+ color: 999999;
 }
 .f-b{
-  font-weight: bold;
+  font-weight: 400;
 }
 .f-black{
-  color: black;
+  color:#333333;
 }
 .f-gray{
-  color: gray;
+  color: #777777;
+  font-weight: bold;
+ 
 }
+.f-grays{
+  color:#999999;
+}
+
+/**/
 .banner{
   width: 100%;
   position: relative;
@@ -72,16 +86,77 @@ text-align: left;
 height: 136rpx
 }
 
+
+/*推荐职位*/
 .recommend{
   text-align: center;
   font-size: 31rpx;
   display: flex;
   justify-content:center;
   color: 555555;
+ 
+}
+.tui{
+  margin-top: 20rpx;
 }
 .line{
 width:64rpx;
 height:2rpx;
 background:#ECECEC;
-margin: 18rpx 20rpx
+margin: 38rpx 20rpx
 }
+
+
+/**index.wxss**/  
+  
+.userinfo {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+  
+.userinfo-avatar {  
+  width: 128rpx;  
+  height: 128rpx;  
+  margin: 20rpx;  
+  border-radius: 50%;  
+}  
+  
+.userinfo-nickname {  
+  color: #aaa;  
+}  
+  
+.usermotto {  
+  margin-top: 200px;  
+}  
+  
+/**/  
+  
+scroll-view {  
+  width: 100%;  
+}  
+  
+.item {  
+  width: 90%;  
+  height: 300rpx;  
+  margin: 20rpx auto;  
+  background: brown;  
+  overflow: hidden;  
+}  
+  
+.item .img {  
+  width: 430rpx;  
+  margin-right: 20rpx;  
+  float: left;  
+}  
+  
+.title {  
+  font-size: 30rpx;  
+  display: block;  
+  margin: 30rpx auto;  
+}  
+  
+.description {  
+  font-size: 26rpx;  
+  line-height: 15rpx;  
+} 
