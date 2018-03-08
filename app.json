@@ -5,8 +5,11 @@
     "pages/user/user"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#2179FB"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0544DA",
+    "navigationBarTitleText": "wechat",
+    "navigationBarTextStyle": "#0544DA",
+    "enablePullDownRefresh": true
    
  
   },

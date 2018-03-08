@@ -19,6 +19,9 @@
       <input type="text" class="input" placeholder-class="input-place" placeholder="收索公司/职位"/>
   </view> -->
 </view>
+<view class='recommend'>
+  <view class="line"></view><view>为您推荐的好职位</view><view class="line"></view>
+</view>
 <view class="list" wx:for="{{jobList}}" wx:key="item.id">
     <view class="list-item list-item-left" >
     <image style="width:100rpx;height:100rpx;" src="{{item.jobUrl}}"/>

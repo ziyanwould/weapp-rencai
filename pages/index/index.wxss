@@ -71,3 +71,17 @@ text-align: left;
 .baCount img{
 height: 136rpx
 }
+
+.recommend{
+  text-align: center;
+  font-size: 31rpx;
+  display: flex;
+  justify-content:center;
+  color: 555555;
+}
+.line{
+width:64rpx;
+height:2rpx;
+background:#ECECEC;
+margin: 18rpx 20rpx
+}
